@@ -1,4 +1,28 @@
 ---
 label: Page
 hide_body: true
-fields: []
+fields:
+- name: introduction
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Introduction
+- name: intro_video
+  type: text
+  config:
+    required: false
+  label: Intro video
+- name: header_image
+  type: file
+  config:
+    maxSize: 64
+  label: Header image
+- name: color
+  type: text
+  config:
+    required: false
+  label: Color
